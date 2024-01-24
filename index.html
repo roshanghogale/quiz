@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Learning Quiz</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body id="body">
+    <div class="neon-section">
+      <h1>Learning Quiz</h1>
+      <h3 id="question"></h3>
+      <ul id="options"></ul>
+      <di class="container">
+        <button onclick="prevQuestion()">Previous</button>
+        <button onclick="submit()">Submit</button>
+        <button onclick="nextQuestion()">Next</button>
+      </di>
+
+      <h4 id="userAnswer"></h4>
+      <h4 id="correctAnswer"></h4>
+    </div>
+  </body>
+  <script src="script.js"></script>
+  <script src="questions.js"></script>
+</html>
