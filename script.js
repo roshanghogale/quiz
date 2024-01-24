@@ -97,8 +97,8 @@ function prevQuestion() {
 }
 
 function nextQuestion() {
+  index++;
   if (index < questions.length) {
-    index++;
     loadQuestion(index);
     if (body.classList.contains("correct")) {
       body.classList.remove("correct");
