@@ -12,9 +12,13 @@
       <h3 id="question"></h3>
       <ul id="options"></ul>
       <di class="container">
-        <button onclick="prevQuestion()">Previous</button>
+        <button onclick="prevQuestion()" id="previos">
+          <i class="fa-solid fa-angle-left"></i> Previous
+        </button>
         <button onclick="submit()">Submit</button>
-        <button onclick="nextQuestion()">Next</button>
+        <button onclick="nextQuestion()" id="next">
+          Next <i class="fa-solid fa-angle-right"></i>
+        </button>
       </di>
 
       <h4 id="userAnswer"></h4>
@@ -23,4 +27,8 @@
   </body>
   <script src="script.js"></script>
   <script src="questions.js"></script>
+  <script
+    src="https://kit.fontawesome.com/0b4679b9c3.js"
+    crossorigin="anonymous"
+  ></script>
 </html>
