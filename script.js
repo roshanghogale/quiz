@@ -105,5 +105,7 @@ function nextQuestion() {
     } else if (body.classList.contains("wrong")) {
       body.classList.remove("wrong");
     }
+  } else {
+    index = questions.length - 1;
   }
 }
