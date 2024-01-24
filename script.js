@@ -109,3 +109,20 @@ function nextQuestion() {
     index = questions.length - 1;
   }
 }
+
+function updateButtonContent() {
+  const prevButton = document.getElementById("previos");
+  const nextButton = document.getElementById("next");
+
+  if (window.innerWidth < 500) {
+    prevButton.innerHTML = '<i class="fas fa-angle-left"></i>';
+    nextButton.innerHTML = '<i class="fas fa-angle-right"></i>';
+  } else {
+    prevButton.innerHTML = "Previous";
+    nextButton.innerHTML = "Next";
+  }
+}
+
+updateButtonContent();
+
+window.addEventListener("resize", updateButtonContent);
