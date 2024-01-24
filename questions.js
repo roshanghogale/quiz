@@ -1,13 +1,9 @@
 const questions = [
   {
-    question: "What does HTML stand for?",
-    options: [
-      "Hyper Text Markup Language",
-      "Highly Typed Machine Learning",
-      "Hyperlink and Text Markup Language",
-      "Home Tool Markup Language",
-    ],
-    correctAnswer: "Hyper Text Markup Language",
+    question:
+      "What will be the output of the following code : print type(type(int))",
+    options: ["type 'int'", "type 'type'", "Error", "0"],
+    correctAnswer: "type 'type'",
   },
   {
     question: "Which of the following is not a programming language?",
@@ -15,14 +11,10 @@ const questions = [
     correctAnswer: "HTML",
   },
   {
-    question: "What is the purpose of CSS?",
-    options: [
-      "To create responsive web pages",
-      "To add interactivity to web pages",
-      "To style and layout web pages",
-      "To execute server-side code",
-    ],
-    correctAnswer: "To style and layout web pages",
+    question:
+      "What is the output of the following code :L = ['a','b','c','d']\nprint(''.join(L))",
+    options: ["Error", "None", "abcd", "['a','b','c','d']"],
+    correctAnswer: "abcd",
   },
   {
     question: "In JavaScript, how do you declare a variable?",
@@ -41,14 +33,9 @@ const questions = [
     correctAnswer: "Python",
   },
   {
-    question: "What is the purpose of the 'git' version control system?",
-    options: [
-      "To create web pages",
-      "To manage and track changes in code",
-      "To design user interfaces",
-      "To write server-side code",
-    ],
-    correctAnswer: "To manage and track changes in code",
+    question: "Which of these is not a core data type?",
+    options: ["Lists", "Dictionary", "Tuples", "Class"],
+    correctAnswer: "Class",
   },
   {
     question:
@@ -63,14 +50,8 @@ const questions = [
     correctAnswer: "string",
   },
   {
-    question: "What does API stand for?",
-    options: [
-      "Automated Programming Interface",
-      "Application Programming Interface",
-      "Advanced Programming Interface",
-      "Automated Processing Interface",
-    ],
-    correctAnswer: "Application Programming Interface",
+    question: "Which of the following correctly declares an array?",
+    options: ["int geeks[20];", "int geeks;", "geeks{20};", "array geeks[20];"],
+    correctAnswer: "int geeks[20];",
   },
-  // Add more questions as needed
 ];
