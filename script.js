@@ -11,7 +11,7 @@ window.onload = function () {
 
 function loadQuestion(index) {
   options.innerHTML = "";
-  question.innerHTML = questions[index].question;
+  question.innerText = questions[index].question;
 
   questions[index].options.forEach((option, optionIndex) => {
     let listItem = document.createElement("li");
@@ -68,14 +68,14 @@ function submit() {
 
   if (selectedOption) {
     if (selectedOption.value === correctAnswer) {
-      originalAnswer.innerHTML = `The Correct answer is: ${correctAnswer}`;
-      usersAnswer.innerHTML = "You are Correct";
+      originalAnswer.innerText = `The Correct answer is: ${correctAnswer}`;
+      usersAnswer.innerText = "You are Correct";
       body.classList.add("correct");
       originalAnswer.classList.add("answercorrect");
       usersAnswer.classList.add("answercorrect");
     } else {
-      originalAnswer.innerHTML = `The Correct answer is: ${correctAnswer}`;
-      usersAnswer.innerHTML = "You are Wrong";
+      originalAnswer.innerText = `The Correct answer is: ${correctAnswer}`;
+      usersAnswer.innerText = "You are Wrong";
       body.classList.add("wrong");
       originalAnswer.classList.add("answerwrong");
       usersAnswer.classList.add("answerwrong");
