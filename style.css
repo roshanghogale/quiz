@@ -1,6 +1,8 @@
 body {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
+  overflow: hidden;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -36,6 +38,10 @@ li {
   margin: 8px;
   font-weight: 550;
   font-style: italic;
+}
+
+li:hover {
+  cursor: pointer;
 }
 
 input[type="radio"] {
@@ -113,6 +119,10 @@ button {
   font-weight: bolder;
 }
 
+button:hover {
+  cursor: pointer;
+}
+
 @media screen and (max-width: 500px) {
   h1,
   h4,
@@ -121,14 +131,55 @@ button {
     width: 200px;
   }
 
+  h4 {
+    margin: 0px;
+  }
+
+  #userAnswer {
+    margin-top: 5px;
+    padding: 0;
+  }
+
   button {
     width: fit-content;
-    font-size: 10px;
-    padding: 8pxpx;
+    font-size: 14px;
+    padding: 9px 12px;
+  }
+
+  #next {
+    border-radius: 50%;
+  }
+
+  #previos {
+    border-radius: 50%;
   }
 
   li {
-    font-size: 12px;
+    font-size: 14px;
+    padding: 8px;
+    font-weight: 2300;
     font-style: normal;
+  }
+
+  h1,
+  h3 {
+    font-size: 15px;
+  }
+
+  h1 {
+    font-size: 20px;
+  }
+
+  input[type="radio"] + label::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 8px;
+    height: 8px;
+    border: 2px solid #333;
+    background-color: #fff;
+    border-radius: 4px;
+    transition: background-color 0.3s, border-color 0.3s;
   }
 }
