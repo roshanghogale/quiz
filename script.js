@@ -23,17 +23,19 @@ function loadQuestion(index) {
     input.id = `option${optionIndex}`;
 
     let label = document.createElement("label");
-    label.innerHTML = option;
+    label.innerText = option;
     label.setAttribute("for", `option${optionIndex}`);
-
-    label.addEventListener("click", function () {
-      input.checked = !input.checked;
-    });
 
     listItem.appendChild(input);
     listItem.appendChild(label);
 
     options.appendChild(listItem);
+
+    listItem.addEventListener("click", function () {
+      if (!input.checked) {
+        input.checked = !input.checked;
+      }
+    });
 
     originalAnswer.innerHTML = "";
     usersAnswer.innerHTML = "";
@@ -118,8 +120,8 @@ function updateButtonContent() {
     prevButton.innerHTML = '<i class="fas fa-angle-left"></i>';
     nextButton.innerHTML = '<i class="fas fa-angle-right"></i>';
   } else {
-    prevButton.innerHTML = "Previous";
-    nextButton.innerHTML = "Next";
+    prevButton.innerHTML = "<i class='fas fa-angle-left'></i> Previous";
+    nextButton.innerHTML = "Next <i class='fas fa-angle-right'></i>";
   }
 }
 
