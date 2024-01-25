@@ -1,4 +1,13 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
 body {
+  background: linear-gradient(135deg, #000235, #087fff, #000235);
+}
+
+.body {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -6,8 +15,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  min-height: 100vh;
-  background: linear-gradient(135deg, #000235, #087fff, #000235);
+  min-height: 90vh;
 }
 
 .neon-section {
@@ -42,6 +50,8 @@ li {
 
 li:hover {
   cursor: pointer;
+  border: 2px inherit rgb(0, 34, 73);
+  box-shadow: 0 3px 5px rgb(0, 0, 0);
 }
 
 input[type="radio"] {
@@ -117,10 +127,35 @@ button {
   margin: 5px;
   width: 100px;
   font-weight: bolder;
+  overflow: hidden;
 }
 
 button:hover {
   cursor: pointer;
+  box-shadow: 0 5px 8px rgb(0, 0, 0);
+}
+
+header {
+  min-height: 10vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  overflow: hidden;
+}
+
+.navOptions {
+  font-size: 15px;
+  font-weight: bold;
+  background-color: transparent;
+  color: White;
+  padding: 5px;
+}
+
+.navOptions:hover {
+  border: 2px solid rgb(176, 176, 176);
+  box-shadow: 0 5px 15px rgb(0, 0, 0);
+  transform: translateY(-2px);
 }
 
 @media screen and (max-width: 500px) {
