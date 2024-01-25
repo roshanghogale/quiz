@@ -7,26 +7,39 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body id="body">
-    <div class="neon-section">
-      <h1>Learning Quiz</h1>
-      <h3 id="question"></h3>
-      <ul id="options"></ul>
-      <di class="container">
-        <button onclick="prevQuestion()" id="previos">
-          <i class="fa-solid fa-angle-left"></i> Previous
-        </button>
-        <button onclick="submit()">Submit</button>
-        <button onclick="nextQuestion()" id="next">
-          Next <i class="fa-solid fa-angle-right"></i>
-        </button>
-      </di>
+    <header>
+      <nav>
+        <button onclick="python()" class="navOptions">python</button>
+        <button onclick="C()" class="navOptions">C++</button>
+        <button onclick="CSharpe()" class="navOptions">C#</button>
+        <button onclick="Java()" class="navOptions">Java</button>
+        <button onclick="JavaScript()" class="navOptions">JavaScript</button>
+        <button onclick="Css()" class="navOptions">CSS</button>
+      </nav>
+    </header>
+    <div class="body">
+      <div class="neon-section">
+        <h1>Learning Quiz</h1>
+        <h3 id="question"></h3>
+        <ul id="options"></ul>
+        <di class="container">
+          <button onclick="prevQuestion()" id="previos">
+            <i class="fa-solid fa-angle-left"></i> Previous
+          </button>
+          <button onclick="submit()">Submit</button>
+          <button onclick="nextQuestion()" id="next">
+            Next <i class="fa-solid fa-angle-right"></i>
+          </button>
+        </di>
 
-      <h4 id="userAnswer"></h4>
-      <h4 id="correctAnswer"></h4>
+        <h4 id="userAnswer"></h4>
+        <h4 id="correctAnswer"></h4>
+      </div>
     </div>
   </body>
   <script src="script.js"></script>
   <script src="questions.js"></script>
+
   <script
     src="https://kit.fontawesome.com/0b4679b9c3.js"
     crossorigin="anonymous"
