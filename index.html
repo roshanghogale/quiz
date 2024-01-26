@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Learning Quiz</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body id="body">
+    <header id="header">
+      <button id="toggel" class="toggel">
+        <i class="fa-solid fa-bars"></i>
+      </button>
+      <nav class="nav" id="nav">
+        <button class="navOptions" id="html">HTML</button>
+        <button class="navOptions" id="css">CSS</button>
+        <button class="navOptions" id="javascript">JavaScript</button>
+        <button class="navOptions" id="python">python</button>
+        <button class="navOptions" id="C">C</button>
+        <button class="navOptions" id="csharpe">C#</button>
+        <button class="navOptions" id="cpp">C++</button>
+        <button class="navOptions" id="java">Java</button>
+      </nav>
+    </header>
+    <div class="body">
+      <div class="neon-section">
+        <h1 id="title">Random</h1>
+        <h3 id="question"></h3>
+        <ul id="options"></ul>
+        <di class="container">
+          <button id="previos" class="navigationButtons">
+            <i class="fa-solid fa-angle-left"></i> Previous
+          </button>
+          <button id="submit" class="navigationButtons">Submit</button>
+          <button id="next" class="navigationButtons">
+            Next <i class="fa-solid fa-angle-right"></i>
+          </button>
+        </di>
+
+        <h4 id="userAnswer"></h4>
+        <h4 id="correctAnswer"></h4>
+      </div>
+    </div>
+    <div id="overlay" class="overlay"></div>
+  </body>
+
+  <script src="questions.js"></script>
+  <script src="script.js" type="module"></script>
+  <script
+    src="https://kit.fontawesome.com/0b4679b9c3.js"
+    crossorigin="anonymous"
+  ></script>
+</html>
